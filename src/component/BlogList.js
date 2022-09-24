@@ -12,7 +12,13 @@ export function BlogList() {
 
   const _GET_POST_LISTS = useSelector((e) => e?.post);
 
-
+const handle={
+    serach:()=>{
+        
+        
+     console.log();
+    },
+};
   return (
     <div className="ArticleContainer">
       <h1>Simple blog with React</h1>
@@ -21,6 +27,20 @@ export function BlogList() {
           <Link to="/addBlog">
             <button className="button-primary">Add New Blog</button>
           </Link>
+        </div>
+        <div className="two columns">
+          
+        <input
+            className="u-full-width"
+            type="text"
+            placeholder="Blog Id"
+            id="nameInput"
+            onChange={(e) => {
+              handle.serach(e?.target.value,);
+            }}
+           
+          />
+         
         </div>
       </div>
       <div class="grid-container">
