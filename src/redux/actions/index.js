@@ -17,7 +17,6 @@ export function handlePostLists() {
         payload: true,
       });
       const response = await getPosts();
-      console.log("response",response)
       dispatch({
         type: GET_POST,
         payload: response,
