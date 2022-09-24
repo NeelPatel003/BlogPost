@@ -29,7 +29,7 @@ export function BlogList() {
         <input
             className="u-full-width"
             type="text"
-            placeholder="Blog Id"
+            placeholder="Search Word for highlight"
             id="nameInput"
             onChange={(e) => {
                 setSearch(e?.target.value,);
@@ -47,7 +47,7 @@ export function BlogList() {
               <h2>
                 {index + 1}. {post.title}
               </h2>
-              <p>{post.body.substr(0, 100)}...</p>
+              {/* <p>{post.body.substr(0, 100)}...</p> */}
               <Highlighter
     highlightClassName="YourHighlightClass"
     searchWords={[search]}
