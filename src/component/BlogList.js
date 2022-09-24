@@ -24,7 +24,7 @@ export function BlogList() {
         </div>
       </div>
       <div class="grid-container">
-        {_GET_POST_LISTS?.loading === 0 ? (
+        {_GET_POST_LISTS?.loading ? (
           <p>Loading Posts...</p>
         ) : (
           _GET_POST_LISTS?.getPost?.map((post, index) => (

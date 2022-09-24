@@ -5,7 +5,7 @@ import { getPosts,addPosts,updatePosts } from "../../services/index";
 export const GET_POST_LOAD = "[USER] GET_POST_LOAD";
 export const GET_POST = "[USER] GET_POST";
 export const ADD_POSTS = "[USER] ADD_POSTS";
-export const UPDATE_POSTS = "[USER] ADD_POSTS";
+export const UPDATE_POSTS = "[USER] UPDATE_POSTS";
 export const POST_ERROR = "[USER] POST_ERROR";
 
 //export action for get user

@@ -49,6 +49,7 @@ const albums = function (state = initialState, action) {
     }
    
     case Actions.UPDATE_POSTS: {
+        
       const { id, title, body } = action.payload;
       const existingUser = state.getPost.find((user) => user.id === id);
       if (existingUser) {

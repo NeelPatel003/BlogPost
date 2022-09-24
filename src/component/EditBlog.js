@@ -23,8 +23,8 @@ export function EditBlog() {
     },
     submit:()=>{
         const passData = {
+            id: POST_ID,
             title: allValue?.title,
-            id: allValue?.id,
             body: allValue?.body,
           };
           dispatch(
